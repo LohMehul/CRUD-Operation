@@ -1,6 +1,4 @@
 # CRUD-Operation without API
 
-## what is CRUD Operation in react ?
-
-A React CRUD application refers to a React application that can perform four basic functions in data management
-Creating data: This is an insert operation, and deals with creating new data in a database, or inserting new records into the database to be added to the pre-existing ones.
+## What is CRUD operations in Reactjs?
+CRUD operation in React stands for Create, Read, Update, and Delete. CRUD is an important concept for organizing and managing data across the web application. We will perform CRUD operation in the React application with local storage in the form of JavaScript Objects instead of using JSON servers or Axios in React
