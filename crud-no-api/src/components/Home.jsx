@@ -5,8 +5,8 @@ const Home = () => {
     return (
         <div>
             <Fragment>
-                <div>
-                    <Table>
+                <div style={{margin:"10rem"}}>
+                    <Table striped bordered hover size='sm'>
                         <thead>
                             <tr>
                                 <th>Name</th>
