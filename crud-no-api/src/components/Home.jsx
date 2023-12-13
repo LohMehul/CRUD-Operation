@@ -1,7 +1,24 @@
 import React, { Fragment } from 'react';
 import {Button,Table} from 'react-bootstrap';
 import Employee from "./Employee";
+import {Link, useNavigate} from "react-router-dom"
+
 const Home = () => {
+
+    let history = useNavigate();
+
+
+    const handelDelete = (id) => {
+        var index = Employee.map(function(e){
+            return e.id;
+
+        }).indexOf(id);
+
+        Employee.splice(index,1);
+
+        history('/');
+    } 
+
     return (
         <div>
             <Fragment>
@@ -25,7 +42,7 @@ const Home = () => {
                                             <td>{item.Age}</td>
                                             <td>
                                                 <Button onClick={()=> alert(item.id) }>Edit</Button> &nbsp;
-                                                <Button onClick={()=> alert(item.id) }>Delete</Button>
+                                                <Button onClick={()=> handelDelete(item.id) }>Delete</Button>
                                             </td>
                                         </tr>
                                     )
