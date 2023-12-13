@@ -11,6 +11,7 @@ const Home = () => {
                             <tr>
                                 <th>Name</th>
                                 <th>Age</th>
+                                <th>Actions</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -22,6 +23,10 @@ const Home = () => {
                                         <tr>
                                             <td>{item.Name}</td>
                                             <td>{item.Age}</td>
+                                            <td>
+                                                <Button onClick={()=> alert(item.id) }>Edit</Button> &nbsp;
+                                                <Button onClick={()=> alert(item.id) }>Delete</Button>
+                                            </td>
                                         </tr>
                                     )
 
