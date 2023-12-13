@@ -1,10 +1,30 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom';
+import App from './App';
 import './index.css';
-import Home from './components/Home';
 import "bootstrap/dist/css/bootstrap.min.css";
-import {} from "react-"
+
+ReactDOM.render(
+        <App />,document.getElementById('root')
+    );
 
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<><Home/></>);
+
+
+
+
+
+
+
+
+
+    
+    // import React from 'react';
+    // import ReactDOM from 'react-dom/client';
+    // import './index.css';
+    
+    
+    // const root = ReactDOM.createRoot(document.getElementById('root'));
+    // root.render(
+        
+        // );
