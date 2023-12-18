@@ -1,19 +1,28 @@
-import './App.css';
-import Home from './components/Home';
-import {BrowserRouter as Router,Route,Routes} from "react-router-dom";
+// import './App.css';
+// import Home from './components/Home';
+// import {BrowserRouter as Router,Route,Routes} from "react-router-dom";
 
-function App() {
-  return (
-    <div className="App">
-        <Router>
-          <Routes>
-            <Route path="/" element={<Home/>} />
-            <Route path="/edit" element={<Home/>} />
-            <Route path="/delete" element={<Home/>} />
-          </Routes>
-        </Router>
-    </div>
-  );
-}
+// function App() {
+//   return (
+//     <div className="App">
+//         <Router>
+//           <Routes>
+//             <Route path="/" element={<Home/>} />
+//             <Route path="/edit" element={<Home/>} />
+//             <Route path="/delete" element={<Home/>} />
+//           </Routes>
+//         </Router>
+//     </div>
+//   );
+// }
+
+// export default App;
+
+import React from 'react';
+import { DatePicker } from 'antd';
+
+const App = () => {
+  return <DatePicker />;
+};
 
 export default App;
