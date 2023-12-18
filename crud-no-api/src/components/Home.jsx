@@ -41,7 +41,9 @@ const Home = () => {
                                             <td>{item.Name}</td>
                                             <td>{item.Age}</td>
                                             <td>
+                                            <Link to="edit">
                                                 <Button onClick={()=> alert(item.id) }>Edit</Button> &nbsp;
+                                            </Link>
                                                 <Button onClick={()=> handelDelete(item.id) }>Delete</Button>
                                             </td>
                                         </tr>
