@@ -75,9 +75,9 @@ import { TodoStoreContext } from "./store";
 
 
 const App = observer(() => {
-
+  
   const store = useContext(TodoStoreContext);
-
+  console.log("app js is called");
   return (
     <div style={{ margin: "20px" }}>
       <h1>Todo App using MobX+React</h1>
