@@ -38,10 +38,13 @@ class Todo {
     constructor(title) {
         makeAutoObservable(this);
         this.title = title;
+        console.log(" todo constructor is called");
     }
 
     toggleCompleted() {
         this.completed = !this.completed
+        console.log("toggle function is called");
+
     }
 }
 
@@ -51,13 +54,17 @@ class TodoStore {
 
     constructor() {
         makeAutoObservable(this);
+        console.log("todostore constructor is called");
     }
     addTodo(title) {
         this.todos.push(new Todo(title))
+        console.log("add todo function is called");
     }
 
     removeTodo(id) {
         this.todos = this.todos.filter((todo)=>todo.id !== id)
+        console.log("remove todo function is called");
+        
     }
 }
 

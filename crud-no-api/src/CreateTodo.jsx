@@ -7,15 +7,15 @@ import { observer } from 'mobx-react';
 const CreateTodo = observer(() => {
     const [title, setTitle] = useState('');
     const store = useContext(TodoStoreContext);
-
+    console.log("create todo list is called");
     const handlesubmit = (e) => {
         e.preventDefault();
         if (title.trim()) {
             store.addTodo(title.trim());
             setTitle("");
         }
-        console.log("target",e.target);
-        console.log("target value",e.target.value);
+        // console.log("target",e.target);
+        // console.log("target value",e.target.value);
     };
     
     return(

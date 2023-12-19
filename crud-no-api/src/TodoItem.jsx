@@ -6,6 +6,7 @@ import { TodoStoreContext } from "./store";
 
 const TodoItem = observer(({ todo }) => {
     const store = useContext(TodoStoreContext)
+    console.log("todoitem is called");
     return (
         <li>
             <input
