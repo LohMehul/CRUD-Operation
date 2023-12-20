@@ -64,32 +64,47 @@
 
 
 
-// ------ class for todo list using mobx ------
-import React from 'react';
-import { useContext } from "react";
-import { observer } from "mobx-react";
-import CreateTodo from "./CreateTodo";
-import TodoItem from "./TodoItem";
-import { TodoStoreContext } from "./store";
+// // ------ class for todo list using mobx ------
+// import React from 'react';
+// import { useContext } from "react";
+// import { observer } from "mobx-react";
+// import CreateTodo from "./CreateTodo";
+// import TodoItem from "./TodoItem";
+// import { TodoStoreContext } from "./store";
 
 
 
-const App = observer(() => {
+// const App = observer(() => {
   
-  const store = useContext(TodoStoreContext);
-  console.log("app js is called");
+//   const store = useContext(TodoStoreContext);
+//   console.log("app js is called");
+//   return (
+//     <div style={{ margin: "20px" }}>
+//       <h1>Todo App using MobX+React</h1>
+//       <CreateTodo />
+//       <ul>
+//         {store.todos.map((todo) => (
+//           <TodoItem key={todo.id} todo={todo} />
+//         ))}
+//       </ul>
+//     </div>
+//   );
+// }
+// );
+
+// export default App;
+
+
+import React from 'react';
+import FormComponent from './components/FormComponent.jsx';
+
+function App() {
   return (
-    <div style={{ margin: "20px" }}>
-      <h1>Todo App using MobX+React</h1>
-      <CreateTodo />
-      <ul>
-        {store.todos.map((todo) => (
-          <TodoItem key={todo.id} todo={todo} />
-        ))}
-      </ul>
+    <div className="App">
+      <h1>Post Data to API</h1>
+      <FormComponent />
     </div>
   );
 }
-);
 
 export default App;
